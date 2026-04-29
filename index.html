@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Рината Куракина | Хоумстейджинг с душой</title>
+  <meta name="description" content="Хоумстейджинг — подготовка квартиры к продаже и аренде. Рината Куракина. Продаём быстрее и дороже." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rinatakurakina.ru/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Рината Куракина | Хоумстейджинг с душой" />
+  <meta property="og:description" content="Подготовлю вашу квартиру к продаже — быстро, красиво, с результатом" />
+  <meta property="og:image" content="https://rinatakurakina.ru/assets/images/og-preview.jpg" />
+  <meta property="og:url" content="https://rinatakurakina.ru/" />
+  <meta property="og:locale" content="ru_RU" />
+  <!-- Яндекс.Метрика: вставить счётчик ниже -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container": "#fffbff",
+            "surface-container-low": "#f6f3ee",
+            "on-background": "#1c1c19",
+            "surface": "#fcf9f4",
+            "surface-container": "#f0ede8",
+            "inverse-on-surface": "#f3f0eb",
+            "on-tertiary": "#ffffff",
+            "outline-variant": "#dcc0ba",
+            "secondary-fixed": "#afeeed",
+            "secondary-fixed-dim": "#93d2d1",
+            "background": "#fcf9f4",
+            "on-tertiary-fixed": "#2c1607",
+            "inverse-surface": "#31302d",
+            "surface-container-high": "#ebe8e3",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "outline": "#89726d",
+            "on-error": "#ffffff",
+            "primary": "#9a402a",
+            "on-tertiary-fixed-variant": "#5c412e",
+            "primary-fixed-dim": "#ffb4a2",
+            "tertiary-container": "#8f6e58",
+            "on-secondary-fixed": "#002020",
+            "on-secondary-container": "#2c6c6c",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#ffb4a2",
+            "surface-bright": "#fcf9f4",
+            "error": "#ba1a1a",
+            "tertiary-fixed": "#ffdcc6",
+            "secondary-container": "#acebeb",
+            "primary-container": "#b95840",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#ffdad2",
+            "secondary": "#276868",
+            "on-primary-fixed-variant": "#7e2c17",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#004f50",
+            "on-surface-variant": "#56423e",
+            "tertiary": "#745541",
+            "surface-variant": "#e5e2dd",
+            "on-primary-fixed": "#3c0700",
+            "on-surface": "#1c1c19",
+            "on-primary-container": "#fffbff",
+            "surface-dim": "#dcdad5",
+            "surface-tint": "#9d422c",
+            "surface-container-highest": "#e5e2dd",
+            "tertiary-fixed-dim": "#e7bea5"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Be Vietnam Pro"],
+            "label": ["Be Vietnam Pro"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body { font-family: 'Be Vietnam Pro', sans-serif; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    /* Mobile menu */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+
+    /* Portfolio placeholder */
+    .img-placeholder {
+      background: linear-gradient(135deg, #f0ede8 0%, #e7bea5 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: #89726d;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface">
+
+  <!-- ─── Navigation ─────────────────────────────────────────── -->
+  <nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-xl shadow-[0_12px_40px_rgba(137,114,109,0.08)]">
+    <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+      <div class="text-2xl font-bold text-[#1c1c19] tracking-tight font-headline">Рината Куракина</div>
+      <div class="hidden md:flex gap-10 items-center">
+        <a class="text-tertiary hover:text-primary transition-colors font-medium" href="#services">Услуги</a>
+        <a class="text-tertiary hover:text-primary transition-colors font-medium" href="#portfolio">Портфолио</a>
+        <a class="text-tertiary hover:text-primary transition-colors font-medium" href="#about">Обо мне</a>
+        <a class="px-6 py-3 bg-primary text-on-primary rounded-xl hover:bg-primary-container transition-all duration-300 font-medium" href="#contact">Записаться</a>
+      </div>
+      <button class="md:hidden" id="burger-btn" aria-label="Меню">
+        <span class="material-symbols-outlined text-primary text-3xl">menu</span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="flex-col gap-4 px-8 pb-6 md:hidden">
+      <a class="text-tertiary hover:text-primary transition-colors font-medium py-2" href="#services">Услуги</a>
+      <a class="text-tertiary hover:text-primary transition-colors font-medium py-2" href="#portfolio">Портфолио</a>
+      <a class="text-tertiary hover:text-primary transition-colors font-medium py-2" href="#about">Обо мне</a>
+      <a class="px-6 py-3 bg-primary text-on-primary rounded-xl text-center font-medium" href="#contact">Записаться</a>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ───────────────────────────────────────────────── -->
+  <header class="relative pt-32 pb-20 px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+      <div class="flex-1 space-y-8 z-10">
+        <h1 class="text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight">
+          Помогаю продать или сдать вашу недвижимость <span class="text-primary italic">быстрее и дороже</span>
+        </h1>
+        <p class="text-xl text-tertiary leading-relaxed max-w-xl">
+          Профессиональный хоумстейджинг с душой и заботой о вашем комфорте. Создаём уют, в который хочется влюбиться с первого взгляда.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="px-8 py-4 bg-primary text-on-primary rounded-xl text-lg font-semibold hover:bg-primary-container transition-all shadow-lg">
+            Начать преображение
+          </a>
+          <a href="#portfolio" class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-xl text-lg font-semibold hover:opacity-90 transition-all">
+            Мои работы
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 relative">
+        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-700">
+          <img src="assets/images/hero/hero.jpeg" alt="Пример хоумстейджинга" class="w-full h-full object-cover"/>
+        </div>
+        <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-tertiary-fixed rounded-full -z-10 opacity-50 blur-3xl"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Stats strip ────────────────────────────────────────── -->
+  <div class="bg-primary text-on-primary py-10 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-extrabold font-headline">10+</div>
+        <div class="text-sm opacity-80 mt-1">объектов подготовлено</div>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold font-headline">24 ч</div>
+        <div class="text-sm opacity-80 mt-1">от объявления до сделки</div>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold font-headline">+25%</div>
+        <div class="text-sm opacity-80 mt-1">к стоимости аренды</div>
+      </div>
+      <div>
+        <div class="text-4xl font-extrabold font-headline">100%</div>
+        <div class="text-sm opacity-80 mt-1">довольных клиентов</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── About ──────────────────────────────────────────────── -->
+  <section class="py-24 px-8 bg-surface-container-low" id="about">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+      <div class="w-full md:w-2/5 aspect-square rounded-xl overflow-hidden shadow-xl border-8 border-surface-container-lowest flex-shrink-0">
+        <img
+          alt="Рината Куракина — хоумстейджер"
+          class="w-full h-full object-cover" style="object-position: center 30%"
+          src="assets/images/about/photo_2026-04-12 00.39.29.jpeg"
+        />
+      </div>
+      <div class="w-full md:w-3/5 space-y-6">
+        <div class="inline-block px-4 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-sm font-bold tracking-widest uppercase">Обо мне</div>
+        <h2 class="text-4xl font-bold text-on-surface">Рината Куракина</h2>
+        <p class="text-lg text-tertiary leading-relaxed">
+          Моя миссия — помочь людям увидеть истинный потенциал их жилья. Каждый интерьер — это история, и я помогаю рассказать её так, чтобы будущий жилец почувствовал себя дома уже на пороге.
+        </p>
+        <p class="text-base text-tertiary leading-relaxed">
+          Работаю в Москве. Специализируюсь на предпродажной подготовке и подготовке к аренде: помогаю собственникам продавать и сдавать быстрее и дороже рынка.
+        </p>
+        <div class="bg-tertiary-fixed p-8 rounded-xl">
+          <p class="text-2xl font-medium text-on-tertiary-fixed italic leading-relaxed">
+            "Я верю, что красота кроется в деталях: в мягком свете лампы, в фактуре подушек и в том, как утреннее солнце падает на паркет."
+          </p>
+          <div class="mt-4 font-bold text-on-tertiary-fixed">— Ваш персональный эксперт по уюту</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services ───────────────────────────────────────────── -->
+  <section class="py-24 px-8" id="services">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Мои Услуги</h2>
+      <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">video_chat</span>
+        <h3 class="text-xl font-bold mb-4">Онлайн-консультация</h3>
+        <p class="text-sm text-tertiary mb-6 flex-grow">Для тех, кто хочет всё сделать сам, но с подсказкой профи.</p>
+        <div class="text-primary font-bold text-lg">от 5 000 руб.</div>
+      </div>
+
+      <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">architecture</span>
+        <h3 class="text-xl font-bold mb-4">Онлайн-проект</h3>
+        <p class="text-sm text-tertiary mb-6 flex-grow">Подробные коллажи, планировки и подборка материалов.</p>
+        <div class="text-primary font-bold text-lg">от 50 000 руб.</div>
+      </div>
+
+      <div class="bg-primary p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full text-on-primary">
+        <span class="material-symbols-outlined text-4xl mb-6">vpn_key</span>
+        <h3 class="text-xl font-bold mb-4">Хоумстейджинг "Под ключ"</h3>
+        <p class="text-sm opacity-90 mb-6 flex-grow">Экспресс-преображение вашей квартиры для продажи.</p>
+        <div class="font-bold text-lg">от 150 000 руб.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Portfolio ──────────────────────────────────────────── -->
+  <section class="py-24 px-8 bg-surface-container" id="portfolio">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4 text-center">Создаём уют, в который хочется влюбиться</h2>
+      <div class="w-24 h-1 bg-primary mx-auto rounded-full mb-16"></div>
+
+      <div class="space-y-24">
+
+        <!-- Project 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Before / After toggle -->
+          <div class="relative rounded-xl overflow-hidden shadow-2xl">
+            <div class="grid grid-cols-2 gap-1">
+              <div class="relative">
+                <img src="portfolio/before/project_1.jpeg" alt="До — проект 1" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 left-3 bg-surface-container-lowest/90 text-on-surface text-xs font-bold px-3 py-1 rounded-full">ДО</div>
+              </div>
+              <div class="relative">
+                <img src="portfolio/after/project_1.jpeg" alt="После — проект 1" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">ПОСЛЕ</div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-3xl font-bold">Однушка в Павшинской пойме</h3>
+            <p class="text-lg text-tertiary">Лёгкая косметика помогла сделать из объекта лучшее предложение в районе. Сдано за 24 часа. +16% к аренде.</p>
+            <div class="flex gap-6 flex-wrap">
+              <div class="flex items-center gap-2 text-secondary font-semibold">
+                <span class="material-symbols-outlined">check_circle</span>
+                Сдано за 24 часа
+              </div>
+              <div class="flex items-center gap-2 text-secondary font-semibold">
+                <span class="material-symbols-outlined">trending_up</span>
+                +16% к аренде
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (reversed) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="lg:order-2 relative rounded-xl overflow-hidden shadow-2xl">
+            <div class="grid grid-cols-2 gap-1">
+              <div class="relative">
+                <img src="portfolio/before/project_2.jpeg" alt="До — проект 2" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 left-3 bg-surface-container-lowest/90 text-on-surface text-xs font-bold px-3 py-1 rounded-full">ДО</div>
+              </div>
+              <div class="relative">
+                <img src="portfolio/after/project_2.jpeg" alt="После — проект 2" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">ПОСЛЕ</div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:order-1 space-y-6 lg:text-right">
+            <h3 class="text-3xl font-bold">Дом по реновации на севере Москвы</h3>
+            <p class="text-lg text-tertiary">Уютный интерьер с различными сценариями для жизни помог владельцам сдать квартиру за 24 часа по верхней цене рынка в данной локации.</p>
+            <div class="flex gap-6 flex-wrap lg:justify-end">
+              <div class="flex items-center gap-2 text-secondary font-semibold">
+                <span class="material-symbols-outlined">timer</span>
+                Сдано за 24 часа
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl">
+            <div class="grid grid-cols-2 gap-1">
+              <div class="relative">
+                <img src="portfolio/before/project_3.jpeg" alt="До — проект 3" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 left-3 bg-surface-container-lowest/90 text-on-surface text-xs font-bold px-3 py-1 rounded-full">ДО</div>
+              </div>
+              <div class="relative">
+                <img src="portfolio/after/project_3.jpeg" alt="После — проект 3" class="w-full aspect-video object-cover"/>
+                <div class="absolute top-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">ПОСЛЕ</div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-3xl font-bold">Загородный дом в Подмосковье</h3>
+            <p class="text-lg text-tertiary">Для посуточной аренды загородной недвижимости продумано всё до мелочей с учётом целевой аудитории. Располагающий интерьер привлекает внимание и выделяет дом среди конкурентов. Владельцы получают ADR выше конкурентов и обеспечивают заполняемость на уровне 75–80%, на 20–25% выше средней по рынку.</p>
+            <div class="flex gap-6 flex-wrap">
+              <div class="flex items-center gap-2 text-secondary font-semibold">
+                <span class="material-symbols-outlined">trending_up</span>
+                Заполняемость 75–80%
+              </div>
+              <div class="flex items-center gap-2 text-secondary font-semibold">
+                <span class="material-symbols-outlined">star</span>
+                ADR выше рынка
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How it works ───────────────────────────────────────── -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4 text-center">Как мы работаем</h2>
+      <div class="w-24 h-1 bg-primary mx-auto rounded-full mb-16"></div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto">1</div>
+          <h3 class="text-xl font-bold">Консультация</h3>
+          <p class="text-sm text-tertiary">Обсуждаем цели, осматриваем объект онлайн или очно</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto">2</div>
+          <h3 class="text-xl font-bold">Концепция</h3>
+          <p class="text-sm text-tertiary">Разрабатываем план преображения и подбираем декор</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto">3</div>
+          <h3 class="text-xl font-bold">Преображение</h3>
+          <p class="text-sm text-tertiary">Реализуем проект — аккуратно и в срок</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto">4</div>
+          <h3 class="text-xl font-bold">Результат</h3>
+          <p class="text-sm text-tertiary">Фотосессия и выход объекта на рынок по максимальной цене</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─────────────────────────────────────────────── -->
+  <section class="py-24 px-8" id="contact">
+    <div class="max-w-3xl mx-auto text-center space-y-8">
+      <h2 class="text-4xl font-bold">Готовы начать?</h2>
+      <p class="text-xl text-tertiary">Свяжитесь со мной — разберём ваш проект и оценим стоимость и сроки.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+        <!-- Telegram -->
+        <a href="https://t.me/rinata_ku"
+           target="_blank" rel="noopener"
+           class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center gap-4 group border border-outline-variant/10">
+          <span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform">send</span>
+          <div>
+            <div class="font-bold text-on-surface">Telegram</div>
+            <div class="text-sm text-tertiary mt-1">@rinata_ku</div>
+          </div>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/rinata_homes"
+           target="_blank" rel="noopener"
+           class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center gap-4 group border border-outline-variant/10">
+          <span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform">photo_camera</span>
+          <div>
+            <div class="font-bold text-on-surface">Instagram</div>
+            <div class="text-sm text-tertiary mt-1">@rinata_homes</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="pt-8">
+        <a href="https://t.me/rinata_ku" target="_blank" rel="noopener"
+           class="inline-block px-12 py-5 bg-primary text-on-primary rounded-xl text-xl font-semibold hover:bg-primary-container transition-all shadow-lg">
+          Записаться на консультацию
+        </a>
+        <p class="text-sm text-tertiary mt-4">Работаю в Москве · <a href="mailto:rinata.kurakina@gmail.com" class="hover:text-primary transition-colors underline underline-offset-2">rinata.kurakina@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <footer class="w-full rounded-t-[3rem] mt-4 bg-surface-container-low">
+    <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+      <div class="mb-8 md:mb-0 space-y-4 text-center md:text-left">
+        <div class="font-headline font-bold text-3xl text-on-surface">Рината Куракина</div>
+        <p class="text-sm text-tertiary max-w-xs">
+          Ваш проводник в мире эстетичного и прибыльного жилья. Сделаем ваш дом местом силы.
+        </p>
+      </div>
+      <div class="flex flex-col gap-6 items-center md:items-end">
+        <div class="flex gap-8">
+          <a class="text-tertiary hover:text-primary font-semibold hover:translate-y-[-2px] transition-transform duration-300"
+             href="https://instagram.com/rinata_homes" target="_blank" rel="noopener">Instagram</a>
+          <a class="text-tertiary hover:text-primary font-semibold hover:translate-y-[-2px] transition-transform duration-300"
+             href="https://t.me/rinata_ku" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <div class="text-xs text-tertiary opacity-60">© 2024 Рината Куракина. Хоумстейджинг в Москве.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    burgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rinata Kurakina | Хоумстейджинг с душой</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#fffbff",
+                      "surface-container-low": "#f6f3ee",
+                      "on-background": "#1c1c19",
+                      "surface": "#fcf9f4",
+                      "surface-container": "#f0ede8",
+                      "inverse-on-surface": "#f3f0eb",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#dcc0ba",
+                      "secondary-fixed": "#afeeed",
+                      "secondary-fixed-dim": "#93d2d1",
+                      "background": "#fcf9f4",
+                      "on-tertiary-fixed": "#2c1607",
+                      "inverse-surface": "#31302d",
+                      "surface-container-high": "#ebe8e3",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "outline": "#89726d",
+                      "on-error": "#ffffff",
+                      "primary": "#9a402a",
+                      "on-tertiary-fixed-variant": "#5c412e",
+                      "primary-fixed-dim": "#ffb4a2",
+                      "tertiary-container": "#8f6e58",
+                      "on-secondary-fixed": "#002020",
+                      "on-secondary-container": "#2c6c6c",
+                      "on-secondary": "#ffffff",
+                      "inverse-primary": "#ffb4a2",
+                      "surface-bright": "#fcf9f4",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#ffdcc6",
+                      "secondary-container": "#acebeb",
+                      "primary-container": "#b95840",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#ffdad2",
+                      "secondary": "#276868",
+                      "on-primary-fixed-variant": "#7e2c17",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#004f50",
+                      "on-surface-variant": "#56423e",
+                      "tertiary": "#745541",
+                      "surface-variant": "#e5e2dd",
+                      "on-primary-fixed": "#3c0700",
+                      "on-surface": "#1c1c19",
+                      "on-primary-container": "#fffbff",
+                      "surface-dim": "#dcdad5",
+                      "surface-tint": "#9d422c",
+                      "surface-container-highest": "#e5e2dd",
+                      "tertiary-fixed-dim": "#e7bea5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Be Vietnam Pro"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl shadow-[0_12px_40px_rgba(137,114,109,0.08)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-[#1c1c19] dark:text-[#fcf9f4] tracking-tight">Rinata Kurakina</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#745541] dark:text-[#ebe8e3] hover:text-[#9a402a] transition-colors font-medium" href="#services">Services</a>
+<a class="text-[#745541] dark:text-[#ebe8e3] hover:text-[#9a402a] transition-colors font-medium" href="#portfolio">Portfolio</a>
+<a class="text-[#745541] dark:text-[#ebe8e3] hover:text-[#9a402a] transition-colors font-medium" href="#about">About</a>
+<a class="px-6 py-3 bg-primary text-on-primary rounded-xl hover:opacity-80 transition-all duration-300 font-medium" href="#contact">Book Consultation</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 space-y-8 z-10">
+<h1 class="text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight">
+                    Помогаю продать или сдать вашу недвижимость <span class="text-primary italic">быстрее и дороже</span>
+</h1>
+<p class="text-xl text-tertiary leading-relaxed max-w-xl">
+                    Профессиональный хоумстейджинг с душой и заботой о вашем комфорте. Создаем уют, в который хочется влюбиться с первого взгляда.
+                </p>
+<div class="flex gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl text-lg font-semibold hover:bg-primary-container transition-all shadow-lg">
+                        Начать преображение
+                    </button>
+<button class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-xl text-lg font-semibold hover:opacity-90 transition-all">
+                        Мои работы
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform lg:rotate-2 hover:rotate-0 transition-transform duration-700">
+<img alt="Cozy staged living room" class="w-full h-full object-cover" data-alt="Modern living room with neutral warm tones, soft linen cushions, a wooden coffee table, and warm sunlight streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxtuVGQXnaGqUUVP-6hu8chB5_ptyO1fbHx0WjLmpfDoK4ZKxD9vnXZLfUJnzZVeDBHQ7haiyHS4TI7DQowkGtKzZXH5OZJ4NODQetwn4isfMe7MVRv7Whl47GKisgQiXjOUNKvAztga8cFEWc35pNHjxGtKeZR6pTx5RBj2JSp97FJbvl25muI8dzV6m4-mc7rjzbXL8ZUEjKe4gIF7c7AfoIVGdypQr9h5ZZX4Gd0z8N8cpFNd1zFWxjzQHEpJ70QX13tL33SJw"/>
+</div>
+<!-- Asymmetrical decorative element -->
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-tertiary-fixed rounded-full -z-10 opacity-50 blur-3xl"></div>
+</div>
+</div>
+</header>
+<!-- About Section (Rina Kurakina) -->
+<section class="py-24 px-8 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-2/5 aspect-square rounded-xl overflow-hidden shadow-xl border-8 border-surface-container-lowest">
+<img alt="Rinata Kurakina portrait" class="w-full h-full object-cover" data-alt="Professional portrait of a friendly woman with a warm smile, wearing a beige linen shirt, in a brightly lit studio with interior design books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnwYb9zmF07tHWEpiuaeUauQwRVOsiwp4owcPtYY3wkKesz4UPNJ8LtcVXC-X6LRrLp2GdfOiUdNs856D9LUJl1hkdILnEKrKxf6fjc8U_Rcej3PhGpwp0ooIr6xctAi3YEhPDlaezIx8oOoqWbixD--HvvavtIucbXn36h9fKLOrCK_Qdv-vMPe-3oUO-MYiX_12y-2UHYrJ9pUn0ZSwUaRc2C5OXKmGVpmZA7icSFf2Vm_DCFa00BR1nKXLSE4Ytt6ZJIiUWdVA"/>
+</div>
+<div class="w-full md:w-3/5 space-y-6">
+<div class="inline-block px-4 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-sm font-bold tracking-widest uppercase mb-4">Обо мне</div>
+<h2 class="text-4xl font-bold text-on-surface">Рина Куракина</h2>
+<p class="text-lg text-tertiary leading-relaxed">
+                    Моя миссия — помочь людям увидеть истинный потенциал их жилья. Каждый интерьер — это история, и я помогаю рассказать её так, чтобы будущий жилец почувствовал себя дома уже на пороге.
+                </p>
+<div class="bg-tertiary-fixed p-8 rounded-xl relative mt-8">
+<p class="text-2xl font-medium text-on-tertiary-fixed italic leading-relaxed">
+                        "Я верю, что красота кроется в деталях: в мягком свете лампы, в фактуре подушек и в том, как утреннее солнце падает на паркет."
+                    </p>
+<div class="mt-4 font-bold text-on-tertiary-fixed">— Ваш персональный эксперт по уюту</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-8" id="services">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Мои Услуги</h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">video_chat</span>
+<h3 class="text-xl font-bold mb-4">Онлайн-консультация</h3>
+<p class="text-sm text-tertiary mb-6 flex-grow">Для тех, кто хочет все сделать сам, но с подсказкой профи.</p>
+<div class="text-primary font-bold text-lg">от 5 000 руб.</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">architecture</span>
+<h3 class="text-xl font-bold mb-4">Онлайн-проект</h3>
+<p class="text-sm text-tertiary mb-6 flex-grow">Подробные коллажи, планировки и подборка материалов.</p>
+<div class="text-primary font-bold text-lg">от 15 000 руб.</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-primary p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full text-on-primary">
+<span class="material-symbols-outlined text-4xl mb-6">vpn_key</span>
+<h3 class="text-xl font-bold mb-4">Хоумстейджинг "Под ключ"</h3>
+<p class="text-sm opacity-90 mb-6 flex-grow">Экспресс-преображение вашей квартиры для продажи.</p>
+<div class="font-bold text-lg">от 25 000 руб.</div>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">shopping_bag</span>
+<h3 class="text-xl font-bold mb-4">Комплектация</h3>
+<p class="text-sm text-tertiary mb-6 flex-grow">Подбор мебели и декора для пустых стен.</p>
+<div class="text-primary font-bold text-lg">от 35 000 руб.</div>
+</div>
+<!-- Service 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 group-hover:scale-110 transition-transform">home_repair_service</span>
+<h3 class="text-xl font-bold mb-4">Инвест-ремонт / Редизайн</h3>
+<p class="text-sm text-tertiary mb-6 flex-grow">Освежаем интерьер для повышения аренды.</p>
+<div class="text-primary font-bold text-lg">от 50 000 руб.</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-24 px-8 bg-surface-container" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-bold mb-16 text-center">Создаем уют, в который хочется влюбиться</h2>
+<div class="space-y-24">
+<!-- Project 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative group rounded-xl overflow-hidden shadow-2xl">
+<img alt="Interior staging project before and after" class="w-full aspect-video object-cover" data-alt="Bright living room after staging with beige sofa, circular wood table, and green plants in ceramic pots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZvQaNKGEM3_qdY5TenprT8TshrD8KEvoQ5cOV-chQ2_-0Hfm8dWM7h7VV-ArLU7TkV2N604A6Ekqme2NHDL2Th4MuuML9jJtIAV4YJN1uu0495qJTSAKab2AauO8P6iUMywKZOKQEyOpoBThdNYXo_j6AwXK2dBCpTgJneRxbQyyFmiwYVxeXQgzob40IXRIcZfOHpmY0ZzjyKrEZPUxwZcze_TSMvIBdf80KFcytTzbsflWpbSIvguoQNA-htS4umC1gDnSHd3A"/>
+<div class="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full font-bold shadow-md">ПОСЛЕ</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-3xl font-bold">Светлая гостиная в ЖК "Новая Высота"</h3>
+<p class="text-lg text-tertiary">Увеличили стоимость аренды на 25% всего за 3 дня работы и минимальный бюджет на декор.</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 text-secondary font-semibold">
+<span class="material-symbols-outlined">check_circle</span>
+                                3 дня реализации
+                            </div>
+<div class="flex items-center gap-2 text-secondary font-semibold">
+<span class="material-symbols-outlined">trending_up</span>
+                                +15к к аренде
+                            </div>
+</div>
+</div>
+</div>
+<!-- Project 2 (Reversed) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="lg:order-2 relative group rounded-xl overflow-hidden shadow-2xl">
+<img alt="Bedroom staging" class="w-full aspect-video object-cover" data-alt="Elegant bedroom with layered bedding, soft warm lighting from bedside lamps, and minimal oak furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOMkJmMHOgRD3D3niciWs2Pl4mvv7XLcZtxykcLb5vn2Z3gMajPP2vqwFt8sdUJ1BOyK5MkrPVHZktfLw8Sa0Pk2noGFsUaei8aij9QN3h0Fh4nXFUBSBhoBi9tD0HXIsBdz64gIeyoL7UCG2uXoSelZBYvCgJu7w2FuWUO2_G_nkxA3GBStw3ieCbEix5EB4jK5OLK8YHylSEl9IXpJZTDDzrxwrO-KRIe57Gj8SJV1xkKC0ICX7h1V7GUA2esX1fBZvDW5_EGU4"/>
+<div class="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full font-bold shadow-md">ПОСЛЕ</div>
+</div>
+<div class="lg:order-1 space-y-6 lg:text-right">
+<h3 class="text-3xl font-bold">Уютная спальня для продажи</h3>
+<p class="text-lg text-tertiary">Квартира была продана на второй день показов после профессиональной подготовки интерьера.</p>
+<div class="flex gap-4 lg:justify-end">
+<div class="flex items-center gap-2 text-secondary font-semibold">
+<span class="material-symbols-outlined">timer</span>
+                                Продано за 48 часов
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f6f3ee] dark:bg-[#1c1c19]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0 space-y-4 text-center md:text-left">
+<div class="font-plus-jakarta-sans font-bold text-3xl text-[#1c1c19] dark:text-[#fcf9f4]">Rinata Kurakina</div>
+<p class="font-be-vietnam-pro text-sm text-[#745541] dark:text-[#ebe8e3] max-w-xs">
+                    Ваш проводник в мире эстетичного и прибыльного жилья. Сделаем ваш дом местом силы.
+                </p>
+</div>
+<div class="flex flex-col gap-6 items-center md:items-end">
+<div class="flex gap-8">
+<a class="text-[#745541] hover:text-[#9a402a] font-semibold hover:translate-y-[-2px] transition-transform duration-300" href="#">Instagram</a>
+<a class="text-[#745541] hover:text-[#9a402a] font-semibold hover:translate-y-[-2px] transition-transform duration-300" href="#">Pinterest</a>
+<a class="text-[#745541] hover:text-[#9a402a] font-semibold hover:translate-y-[-2px] transition-transform duration-300" href="#">LinkedIn</a>
+</div>
+<div class="text-[#9a402a] font-bold text-xl">+7 (900) 000-00-00</div>
+<div class="font-be-vietnam-pro text-xs text-[#745541] opacity-60">© 2024 Rinata Kurakina Home Staging. All rights reserved.</div>
+</div>
+</div>
+</footer>
+
+```</body></html>
